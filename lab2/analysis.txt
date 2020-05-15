@@ -7,3 +7,6 @@ low-performance只能執行最高Priority的thread
 可能原因：從時間的表現上可清楚得知
 在low-performance做單一thread及占用了80%的worst case execution time
 在RM演算法的前提下，難以再去切換其他thread使用CPU
+2.在丟失的情況不高下，如果需要等到response才繼續送，一來一回的傳輸上其實蠻沒效率的
+我感覺像是從youtube看影片，server端不斷送資料，使用者不會無時無刻去確認每一個section下載了什麼
+給出response，而是交由youtube繼續送，連線不佳時才轉圈等待reponse等等
