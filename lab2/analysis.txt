@@ -1,0 +1,9 @@
+1.我的硬體配置為  cpu frquency在800MHz-3800MHz之間
+此次配置high-performance為2000MHz，low-performance為800MHz
+在測試結果的表現上兩者皆很少（<5%)超過Worst case execution time
+兩者最大差別在於：
+high-performance能做到thread之間的交互排程
+low-performance只能執行最高Priority的thread
+可能原因：從時間的表現上可清楚得知
+在low-performance做單一thread及占用了80%的worst case execution time
+在RM演算法的前提下，難以再去切換其他thread使用CPU
